@@ -31,6 +31,7 @@
     "@syncfusion/ej2-icons": "^26.1.35",
     "@syncfusion/ej2-inputs": "^26.1.39",
     "express": "^4.18.2",
+    "ngx-toastr": "^19.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"

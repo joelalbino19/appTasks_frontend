@@ -99,7 +99,6 @@ export class TableComponent implements OnInit {
   }
 
   viewGrafic() {
-    this.router.navigate(['/dashboard']);
     this.localStorageService.setItem('countUser', JSON.stringify(this.dataComponent.length))
   }
 

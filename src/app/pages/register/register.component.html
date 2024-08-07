@@ -1,0 +1,25 @@
+<section id="loginComponent">
+  <div class="wrapper">
+    <form [formGroup]="formRegister" >
+      <h1>Registrate</h1>
+      <div class="input-box">
+        <input type="text" placeholder="E-mail" formControlName="email" autofocus="on">
+        <i class='bx bxs-user'></i>
+      </div>
+      <div class="input-box">
+        <input type="password" id="password" placeholder="Contraseña" formControlName="password">
+        <i *ngIf="iconPassword" class='bx bxs-lock-open icon_pass' (click)="viewPassword('password')"></i>
+        <i *ngIf="!iconPassword" class='bx bxs-lock-alt icon_pass' (click)="viewPassword('text')"></i>
+      </div>
+      <div class="input-box">
+        <input type="password" id="confirmPassword" placeholder="Confirmar Contraseña" formControlName="confirmPassword">
+        <i *ngIf="iconPassword" class='bx bxs-lock-open icon_pass' (click)="viewPassword('password')"></i>
+        <i *ngIf="!iconPassword" class='bx bxs-lock-alt icon_pass' (click)="viewPassword('text')"></i>
+      </div>
+      <button type="submit" class="btn_login">Enviar</button>
+      <div class="register-link">
+        <p> <a [routerLink]="['/login']">Regresar</a></p>
+      </div>
+    </form>
+  </div>
+</section>
